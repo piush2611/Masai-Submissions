@@ -1,0 +1,10 @@
+ipv4 :
+1 - It uses 32 bit long addresses.
+2-  Address space is about 4.3 billion 
+3- It has five types of class i.e. class A, class B, class C, class D and class E
+4- It can permit 2^32 unique addresses
+
+ipv6 :
+1- It uses 128 bit long addresses
+2- Address space is about 340 duodecillion  
+3- It can permit 2^128 unique addresses

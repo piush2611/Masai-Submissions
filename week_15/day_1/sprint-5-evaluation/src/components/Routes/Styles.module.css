@@ -1,0 +1,32 @@
+.center {
+    text-align: center;
+}
+
+.dFlex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pagination {
+    padding: 20px;
+    display: flex;
+    text-align: center;
+}
+
+.padding {
+    padding: 50px;
+}
+
+.w100 {
+    width: 190px;
+}
+
+.noTextDecoration {
+    text-decoration: none;
+}
+
+.color {
+    color: rgb(155, 149, 149);
+    text-align: left;
+    padding: 10px;
+}

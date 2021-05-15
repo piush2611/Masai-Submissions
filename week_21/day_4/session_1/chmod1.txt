@@ -1,0 +1,3 @@
+chmod g=x store/
+chmod u=x store/
+chmod 0=x store/

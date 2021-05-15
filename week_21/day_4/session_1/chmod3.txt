@@ -1,0 +1,5 @@
+644 - u- read and write, g- read, o-read
+602 - u- read and write, g- no permission 2- write only
+777 - u- read, write and execute, g- read, write and execute, 0- read, write and execute
+501 - u- read and execute, g- no permission, o- execute
+444 - u- read, g- read, o- read

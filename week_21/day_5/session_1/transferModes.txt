@@ -1,0 +1,3 @@
+Simplex mode : Loudspeaker, keyboard
+Half duplex mode : Walkie-talkie
+Full duplex mode : Telephone 

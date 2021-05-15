@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Layout_2</title>
+    <style>
+        #layout {
+            margin: 100px 300px;
+            
+        }
+        #layout > div {
+            display: flex;
+            flex-direction: row;
+            margin: 40px;
+        }
+        #one {
+            background-color: darkgoldenrod;
+            width: 1050px;
+            height: 100px;
+        }
+        #one p {
+            font-size: 40px;
+        }
+        #secPart > div {
+            width: 500px;
+            height: 500px;
+        }
+        #two {
+            background-color: darkgreen;
+        }
+        #three {
+            background-color: darkred;
+            margin-left: 50px;
+        }
+        @media only screen and (max-width: 600px) {
+            #layout {
+                margin: 80px 100px;
+            }
+            #layout div {
+                flex-direction: column;
+                margin-bottom: 30px;
+            }
+            #one {
+                width: 350px;
+                height: 80px;
+            }
+            #secPart > div{
+                width: 350px;
+                height: 200px;
+            }
+            #three {
+                margin-left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <div id="one"><P>Navigation</P></div>
+        <div id="secPart">
+            <div id="two"><h1>LEFT BOX</h1></div>
+            <div id="three"><h1>RIGHT BOX</h1></div>
+        </div>
+    </div>
+</body>
+</html>

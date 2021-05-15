@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Practise Creators</title>
+</head>
+
+<body>
+    <div id="headings">
+    </div>
+    <div id="cont">
+    </div>
+    <ul id="vikings">
+        <li>Priyanshu</li>
+    </ul>
+    <button class="btn-1">Create H1</button>
+    <button class="btn-2">Create 2 H3</button>
+    <button class="btn-3">Create DIVS</button>
+    <button class="btn-4">Add Students</button>
+    <button class="btn-5">Add Copyright</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        var students = ['Ajay', 'Akshay', 'Anusha', 'Chandrashekhara', 'Haren', 'Hasaan', 'Mahesh', 'Mousumi', 'Pavan', 'Rahul', 'Sumanta', 'Venkatesh', 'Vetrival', 'Vijayendra'];
+
+        $('.btn-1').click(function () {
+            $("#headings").append("<h1>MASAI</h1>")
+        })
+        $('.btn-2').click(function () {
+            $('#headings').append("<h3>A Transformation in education</h3> <h3>Learn to earn, pay when you get</h3>")
+        })
+        $('.btn-3').click(function () {
+            for (var i = 1; i <= 10; i++) {
+                $('#cont').append("<div>" + "Content " + i + "</div>");
+            }
+        })
+        $('.btn-4').click(function(){
+            for( var j =0; j < students.length; j++){
+                $('#vikings').append("<li>" + students[j] + "</li>")
+            }
+        })
+        $('.btn-5').click(function(){
+            $('.btn-1').before("<p>  @ masai 2019 </p>")
+        })
+    </script>
+</body>
+
+</html>

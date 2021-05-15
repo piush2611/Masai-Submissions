@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>Practise Deletions</title>
+</head>
+
+<body>
+    <h1 class="first">First H1</h1>
+    <h1 class="second">Second H1</h1>
+    <h3 class="third">First H3</h3>
+    <h3 class="fourth">Second H3</h3>
+    <div id="headings">
+        <h5 class="h5First">First H5</h5>
+        <h5 class="h5Sec">Second H5</h5>
+        <h5 class="h5Third">Third H5</h5>
+    </div>
+    <div id="cont">
+        <div class="green">First DIV</div>
+        <div class="red">Second DIV</div>
+        <div class="blue">Third DIV</div>
+        <p class="green">First P</p>
+        <p class="red">Second P</p>
+        <p class="blue">Third P</p>
+    </div>
+    <hr />
+    <button onclick="removeH1()">Remove H1</button>
+    <button onclick="removeBothH3()">Remove H3</button>
+    <button onclick="removeAllH5()">Remove H5</button>
+    <button onclick="removeRed()">Remove Red</button>
+    <button onclick="removeAllDiv()">Remove DIVS</button>
+    <script>
+        var body = document.querySelector('body');
+        function removeH1() {
+            var h1 = document.querySelector(".first")
+            body.removeChild(h1)
+        }
+        function removeBothH3() {
+            var a = document.querySelector(".fourth");
+            var b = document.querySelector(".third")
+            body.removeChild(a);
+            body.removeChild(b)
+        }
+        function removeAllH5() {
+            var parent = document.getElementById("headings")
+            var a = document.querySelector('.h5First')
+            var b = document.querySelector('.h5Sec')
+            var c = document.querySelector('.h5Third')
+            parent.removeChild(a);
+            parent.removeChild(b);
+            parent.removeChild(c);
+        }
+        function removeRed() {
+            var parent = document.getElementById("cont");
+            var a = document.querySelector('div.red');
+            var b = document.querySelector('p.red');
+            parent.removeChild(a);
+            parent.removeChild(b);
+        }
+        function removeAllDiv() {
+            var parent = document.getElementById('cont');
+            var a = document.querySelector('div.green')
+            var b = document.querySelector('div.red')
+            var c = document.querySelector('div.blue')
+            parent.removeChild(a);
+            parent.removeChild(b);
+            parent.removeChild(c);
+        }
+    </script>
+</body>
+
+</html>

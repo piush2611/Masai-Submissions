@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+            * {
+                font-family: sans-serif;
+            }
+            body > div {
+                margin: 80px;
+            }
+        #first {
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+            height: 320px;
+            padding: 20px;
+            background-color: gainsboro;
+            text-align: center;
+        }
+        #first img {
+            width: 120px;
+        }
+        #first h1 {
+            color: navy;
+        }
+        #first p {
+            font-size: 30px;
+        }
+        #sec {
+            display: flex;
+            flex-direction: row;
+            width: 800px;
+            height: 150px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        #sec img {
+            width: 120px;
+            margin-right: 20px;
+        }
+        #sec h1 {
+            color: red;
+        }
+        .third {
+            width: 900px;
+            height: 120px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: orangered;
+            padding: 20px;
+        }
+        .third div {
+            float: left;
+        }
+        #one {
+            border-right: 10px solid black;
+            width: 450px;
+        }
+        .third span {
+            color: white;
+            font-size: 25px;
+        }
+        #two {
+            float: right;
+        }
+
+        @media only screen and (max-width: 700px) {
+            #first {
+                width: 300px;
+                height: 250px;
+                padding: 10px;
+            }
+            #first img {
+                width: 70px;
+            }
+            #first h1 {
+                color: red;
+            }
+            #first p {
+                font-size: 15px;
+            }
+            #sec {
+                    width: 600px;
+                    height: 100px;
+                }
+                #sec img {
+                    width: 60px;
+                }
+                #sec h1 {
+                    color: navy;
+                }
+                #sec p {
+                    font-size: 10px;
+                }
+                .third {
+                    width: 700px;
+                    height: 80px;
+                    background-color: yellow;
+                    padding: 10px;
+                }
+                #one {
+                    border-right: 5px solid black;
+                    width: 300px;
+                }
+                .third span {
+                    font-size: 15px;
+                }
+                .third p {
+                    font-size: 10px;
+                }
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="first">
+        <img src="https://raw.githubusercontent.com/masai-school/full-stack-dev-1910/master/week_01/day_4/resources/images/linus.jpg" alt="image">
+        <h1>Linus Torvalds</h1>
+        <p>The creator of Linux and Git</p>
+    </div>
+    <div id="sec">
+        <img src="https://raw.githubusercontent.com/masai-school/full-stack-dev-1910/master/week_01/day_4/resources/images/khan.jpg" alt="image">
+        <div>
+            <h1>Sal Khan</h1>
+            <p>Salman Khan is the founder of thr Khan Academy which has a mission <br> of providinga free world-class education for anyone, anywhere</p>
+        </div>
+    </div>
+    <div class="third">
+        <div id="one">
+            <span>Ken Thompson</span>
+            <p>Designed and Implemeted the <br> original Unix Operating system</p>
+        </div>
+        <div id="two">
+            <span>Dennis Ritchie</span><br>
+            <p>The creator Of C programming language</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#carousel > div > img {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 48%;
+}
+
+#carousel > div {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+#carousel {
+    display: flex;
+    margin: 100px 0;
+}
+
+#carousel > .leftButton {
+    position: absolute;
+    margin:90px 90% 0px 10%;
+}
+
+#carousel > .rightButton {
+    position: absolute;
+    margin:90px 10% 0px 90%;
+}
+
+#carousel button {
+    background-color: white;
+    padding: 20px 10px;
+    border: none;
+    color: rgb(29, 26, 26);
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#carousel  h4 {
+    margin: 30px 0;
+}
+
+#carousel .designation {
+    color: rgb(199, 184, 199);
+}
+
+.blog > h1 {
+    text-align: center;
+}
+
+#cards {
+    display: grid;
+    margin: 50px 10%;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 1fr;
+}
+
+#cards img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#cards > div {
+    width: 90%;
+    padding: 20px;
+    margin: 30px;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#cards .catAndUsername {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#cards .catAndUsername div:first-child {
+    background-color:  rgb(241, 189, 19);
+    padding: 5px 10px;
+    color:white;
+}
+
+#cards .catAndUsername div:last-child {
+    padding: 5px 10px;
+    color:gray;
+}
+
+#cards button  {
+    background-color: red;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 40px;
+    margin-top: 10px;
+}
+
+.form {
+    text-align: center;
+}
+
+.form > h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+.container div:last-child input, select {
+    width: 400px;
+    border: none;
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(39, 5, 5);
+}
+
+#submitBtn {
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: rgb(56, 11, 11);
+    color: white;
+    margin-bottom: 100px;
+}
+
+.container button {
+    border: none;
+}
+
+/* styling for tablet size devices */
+@media only screen and (max-width : 1020px){
+    #cards {
+        display: grid;
+        margin: 50px 10%;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 1fr;
+    }
+    #cards > div {
+        width: 90%;
+        text-align: center;
+        margin: 20px;
+    }
+
+    /* different order in tablet size devices */
+    #cards div:first-child {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+}
+
+/* styling for mobile size devices  */
+@media only screen and (max-width : 650px){
+    #cards {
+        display: grid;
+        margin: 50px 10%;
+        grid-template-columns: repeat(1, 90%);
+        grid-template-rows: 1fr;
+    }
+
+    #cards > div {
+        width: 100%;
+    }
+
+    /* different order in mobile size devices */
+    #cards div:last-child {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+}

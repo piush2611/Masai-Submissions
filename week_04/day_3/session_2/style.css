@@ -1,0 +1,25 @@
+body {
+    margin: 200px 500px;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background: white;
+    color: black;
+    margin: 10px;
+} 
+
+input, select {
+    background: white;
+    border: 2px solid black;
+    margin: 15px;
+    padding: 5px;
+}
+
+button:hover {
+    background: black;
+    color: white;
+}

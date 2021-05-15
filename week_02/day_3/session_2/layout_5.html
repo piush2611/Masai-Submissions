@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>layout_5</title>
+    <style>
+        #layout {
+            margin: 70px 200px;
+            display: grid;
+            grid-template-columns: 160px 450px;
+            grid-template-rows: 80px 400px;
+            grid-gap: 40px;
+        }
+        #layout div {
+            /* background-color: turquoise; */
+            border-radius: 5px;
+        }
+        .one {
+            grid-column: 1/3;
+            grid-row: 1;
+            background-color: tomato;
+        }
+        .two {
+            grid-column: 1/2;
+            grid-row: 2;
+            background-color: violet;
+        }
+        .three {
+            grid-column: 2/3;
+            grid-row: 2;
+            background-color: yellow;
+        }
+        @media only screen and (max-width: 768px) {
+            #layout {
+                margin: 50px 150px;
+                grid-template-columns: 100px 350px;
+                grid-template-rows: 70px 350px;
+                grid-gap: 30px;
+            }
+            .one {
+                background-color: red;
+            }
+            .two {
+                background-color: black;
+            }
+            .three {
+                background-color: sienna;
+            }
+        }
+        @media only screen and (min-width: 968px) {
+            #layout {
+                margin: 100px 500px;
+                grid-template-columns: 220px 600px;
+                grid-template-rows: 120px 600px;
+                grid-gap: 50px;
+            }
+            .one {
+                background-color: slategrey;
+            }
+            .two {
+                background-color: black;
+            }
+            .three {
+                background-color: chocolate;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>

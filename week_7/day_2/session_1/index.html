@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="row my-3 bg-light p-4">
+        <div class="col-6">
+            <label for="">Firstname</label>
+            <input type="text" id="fname" class="form-control">
+            <label for="">Lastname</label>
+            <input type="text" id="lname" class="form-control">
+            <label for="">Username</label>
+            <input type="text" id="uname" class="form-control required">
+            <label for="">Password</label>
+            <input type="password" id="pass" class="form-control required">
+            <label for="">Email</label>
+            <input type="text" id="email" class="form-control required">
+            <label for="">Address</label>
+            <input type="text" id="address" class="form-control">
+            <label for="">Mobile</label>
+            <input type="text" id="mob" class="form-control">
+            <label for="">Type</label>
+            <select name="" class="form-control type" class="form-control required">
+                <option value="user">user</option>
+                <option value="admin">admin</option>
+            </select>
+            <div class="row my-2">
+                <button class="btn btn-danger mx-auto" id="btn">Submit</button>
+            </div>
+            <div class="text-align row my-2">
+                <select name="" id="dropdown" class="form-control col-4">
+                    <option value="...">select</option>
+                </select>
+                <select name="" id="filter" class="form-control col-4">
+                    <option value="default" selected>Select all/users/admins</option>
+                    <option value="">All</option>
+                    <option value="user">Users</option>
+                    <option value="admin">Admins</option>
+                </select>
+                <select name="" id="sortIt" class="form-control col-4">
+                    <option value="asc">Ascending</option>
+                    <option value="des">Descending</option>
+                </select>
+            </div>
+            <div id="info"></div>
+            
+
+        </div>
+        <div class="col-6 text-danger bg-light display-5">
+            <table class="table"></table>
+        </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

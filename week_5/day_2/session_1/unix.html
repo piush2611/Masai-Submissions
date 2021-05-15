@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unix</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        .row1 {
+            width: 450px;
+            height: 310px;
+            background: silver;
+            margin: 0 auto;
+            padding: 20px;  
+            text-align: center;
+        }
+
+        .firsth1 {
+            color: navy;
+        }
+
+        .firstp {
+            font-size: 30px;
+        }
+
+        img {
+            height: 160px;
+            width: 140px;
+        }
+
+        .row2 {
+            width: 750px;
+            height: 160px;
+            margin: 0 auto;
+            padding-top: 60px;
+        }
+
+        .row {
+            float: right;
+            padding: 10px;
+        }
+
+        .secondh1 {
+            color: red;
+        }
+
+        .row3 {
+            clear: left;
+            background: orangered;
+            width: 1000px;
+            height: 140px;
+            margin: 0 auto;
+            padding: 25px;
+        }
+
+        .divider {
+            width: 490px;
+            height: 140px;
+            border-right: 10px solid black;
+            float: left;
+            padding: 0;
+        }
+
+        #linus {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 180px;
+        }
+
+        .spart {
+            float: right;
+        }
+
+        .name {
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <button onclick="createPage()">Create</button>
+
+    <script>
+        function createPage() {
+            var cont = document.getElementById("container");
+            var row1 = document.createElement("div")
+            row1.setAttribute("class", "row1")
+            var img1 = document.createElement("img")
+            img1.setAttribute("src", "https://raw.githubusercontent.com/masai-school/full-stack-dev-1910/master/week_01/day_4/resources/images/linus.jpg")
+            row1.appendChild(img1)
+            var h1 = document.createElement("h1")
+            h1.textContent = "Linus Torvalds"
+            h1.setAttribute("class", "firsth1")
+            row1.appendChild(h1)
+            var p = document.createElement("p")
+            p.textContent = "The creator of Linux & Git";
+            p.setAttribute("class", "firstp")
+            row1.appendChild(p)
+            cont.appendChild(row1)
+
+            var row2 = document.createElement("div")
+            row2.setAttribute("class", "row2");
+            var img2 = document.createElement("img")
+            img2.setAttribute("src", "https://raw.githubusercontent.com/masai-school/full-stack-dev-1910/master/week_01/day_4/resources/images/khan.jpg")
+            row2.appendChild(img2);
+            var div = document.createElement("div");
+            div.setAttribute("class", "row");
+            var anotherH1 = document.createElement("h1")
+            anotherH1.textContent = "Sal Khan";
+            anotherH1.setAttribute("class", "secondh1")
+            div.appendChild(anotherH1)
+            var anotherP = document.createElement("p");
+            anotherP.innerHTML = "Salman Khan is the founder of Khan Academy which has a mission of" + "<br>" + "providing a free world-class education for anyone, anywhere."
+            div.appendChild(anotherP)
+            row2.appendChild(div)
+            cont.appendChild(row2)
+
+            var row3 = document.createElement("div");
+            row3.setAttribute("class", "row3");
+            row3.style.marginTop = "50px"
+            var div1 = document.createElement("div");
+            div1.setAttribute("class", "divider")
+            var p1 = document.createElement("p")
+            p1.textContent = "Ken Thompson";
+            p1.setAttribute("class", "name")
+            div1.appendChild(p1);
+            var p2 = document.createElement("p");
+            p2.innerHTML = "Designed & Implemented the" + "<br>" + "Original Unix operating system"
+            div1.appendChild(p2)
+            row3.appendChild(div1);
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("class", "spart");
+            var p3 = document.createElement("p");
+            p3.textContent = "Dennis Ritchie";
+            p3.setAttribute("class", "name");
+            div2.appendChild(p3)
+            var p4 = document.createElement("p");
+            p4.textContent = "The creator of C programming language";
+            div2.appendChild(p4)
+            row3.appendChild(div2)
+            cont.appendChild(row3);
+        }
+    </script>
+</body>
+
+</html>

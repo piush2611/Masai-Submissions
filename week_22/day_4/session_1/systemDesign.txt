@@ -1,0 +1,56 @@
+APP - MASAI-CHAT-APPLICATION
+
+HIGH LEVEL DESIGN : 
+
+1. CLIENT-SIDE :
+	1. LANDING PAGE
+	2. SIGN UP PAGE
+	3. SIGN IN PAGE
+	4. PAGE LISTING ALL OF USER'S CHAT
+	5. PAGE LISTING SELECTED CHAT
+
+2. DB DESIGN : 
+	1. USERS table :
+		1. Id
+		2. Username
+		3. Email
+		4. passwordHash
+		5. salt
+
+	2. CHATS table :
+		1. Id
+		2. userId ( USERS.id )
+		3. user2  ( USERS.id )
+
+	3. CHAT-MESSAGES table :
+		1. Id
+		2. chatId ( CHATS.id )
+		3. userId ( USERS.id )
+		4. message
+        5. date and time
+
+	4. GROUP-NAME table :
+		1. Id
+		2. groupName
+
+	5. GROUP-USERS table :
+		1. Id
+		2. groupId ( GROUP-NAME.id )
+		3. userId ( USERS.id )
+
+	5. GROUP MESSAGES table :
+		1. Id
+		2. groupId ( GROUP-NAME.id )
+		3. message
+		4. userId ( USERS.id )
+        5. date and time
+
+3. API DOCS :
+	1. user registration 
+	2. user login 
+	3. user chats 
+	4. particular chat
+	5. group chat
+	6. add new message
+	7. delete message
+	

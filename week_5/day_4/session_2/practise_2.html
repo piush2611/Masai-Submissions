@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <title>Practise_2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-4 bg-light p-4">
+        <div class="row">
+            <div class="col-8">
+                <h2>Billing Address</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstName">First name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastName">Last name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                            <input type="text" placeholder="Username" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <small class="text-muted">(Optional)</small></label>
+                        <input type="email" class="form-control" placeholder="you@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                        <label for="address2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment or suite">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="city">City</label>
+                            <select class="form-control">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="state">State</label>
+                            <select class="form-control">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="zip">Zip</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <hr class="text-muted">
+                    <div class="form-group">
+                        <input type="checkbox">
+                        <label for="">Shipping address is same as my billing address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox">
+                        <label for="">Save this information for next time</label>
+                    </div>
+                    <hr class="text-muted">
+                    <h2>Payment</h2>
+                    <div class="form-group">
+                        <input type="radio" checked>
+                        <label for="">Credit card</label><br>
+                        <input type="radio">
+                        <label for="">Debit card</label><br>
+                        <input type="radio">
+                        <label for="">Paypal</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="">Name on card</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="">Credit card number</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4 ">
+                <div>
+                    <h3 class="d-flex justify-content-between">Your cart
+                        <span class="badge-secondary badge-pill">3</span></h3>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item ">
+                        <div class="d-flex justify-content-between">
+                            <span>Product name</span>
+                            <span class="text-muted">$12</span>
+                        </div>
+                        <small class="text-muted">Brief Description</small>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <span>Second product</span>
+                            <span class="text-muted">$8</span>
+                        </div>
+                        <small class="text-muted">Brief Description</small>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <span>Third item</span>
+                            <span class="text-muted">$5</span>
+                        </div>
+                        <small class="text-muted">Brief Description</small>
+                    </li>
+                    <li class="list-group-item bg-light">
+                        <div class="d-flex justify-content-between text-success ">
+                            <span>Promocode</span>
+                            <span>-$5</span>
+                        </div>
+                        <small class="text-success">EXAMPLECODE</small>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <div>Total(USD)</div>
+                            <div class="text-body">$20</div>
+                        </div>
+                    </li>
+                </ul>
+                <br>
+                <div class="list-group-item">
+                    <div class="input-group-append">
+                        <input type="text" placeholder="Promo code" class="form-control">
+                        <span class="input-group-text bg-secondary text-white">Redeem</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

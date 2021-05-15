@@ -1,0 +1,15 @@
+I - Create python file
+II - Write one infinite for loop / while loop
+III - Run python file with command python <filename>
+IV - Open terminal and type command - ps aux | grep python
+V - Check the pid for python file you created with <filename>
+VI - Type kill pid number    // pid number : pid number of the file you want to kill
+
+
+Example :
+I - touch kill.py
+II - while True : a = 0 ; a+=1
+III - python kill.py
+IV - ps aux | grep python
+V - kill 4582 
+

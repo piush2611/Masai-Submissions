@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Layout_2</title>
+    <style>
+        .conatiner {
+            margin: 120px 600px;
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+            background: red;
+            float: left;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        .rectangle {
+            width: 300px;
+        }
+        .row {
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="row">
+            <div class="square"></div>
+            <div class="rectangle square"></div>
+            <div class="square"></div>
+        </div>
+
+        <div class="row">
+            <div class="rectangle square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+
+        <div class="row">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="rectangle square"></div>
+        </div>
+    </div>
+</body>
+</html>

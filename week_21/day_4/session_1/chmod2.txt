@@ -1,0 +1,2 @@
+chmod u= updateCronJob.txt
+chmod u= chmod1.txt

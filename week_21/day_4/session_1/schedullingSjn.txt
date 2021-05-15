@@ -1,0 +1,3 @@
+shortest job next  scheduling : 
+Preemptive Scheduling - In this scheduling still processes can be scheduled. For ex. if process with short execution time comes than current running process's execution time in the queue then, current process can be set to starve and process in the queue can be executed.
+Non-Preemptive Scheduling - In this scheduling processes cannot be scheduled. For ex. if process with short execution time comes than current running process's execution time in the queue then also process running presently will continue to run.

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation coding - I</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- carousel part   -->
+        <div id="carousel">
+            <div>
+                <img src="https://images.unsplash.com/photo-1559526323-cb2f2fe2591b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=60"
+                    id="profilePic" alt="profile-pic" />
+                <h4 class="testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nisi vel
+                    reiciendis eum, natus deserunt optio ad mollitia, expedita officia earum quos repudiandae
+                    consequatur inventore illo! Sed, sunt expedita! Nisi!</h4>
+                <h2 class="username">Lionel Messi </h2>
+                <h2 class="designation">Frontend Dev</h2>
+            </div>
+            <button class="leftButton" onclick="carouselManipulation(true)"><</button>
+            <button class="rightButton" onclick="carouselManipulation(false)">></button>
+        </div>
+
+        <!-- blog cards  -->
+        <div class="blog">
+            <h1>Our Blog</h1>
+            <div id="cards"></div>
+        </div>
+
+        <!-- form to add new blog -->
+        <div class="form">
+            <h1>Add new card </h1>
+            <input type="text" class="newBlogImgUrl" placeholder="Image url .."><br>
+            <select name="" class='newBlogCategory'>
+                <option value="sports">Sports</option>
+                <option value="business">Business</option>
+                <option value="entrepreneur">Entrepreneur</option>
+            </select> <br>
+            <input type="text" class="newBlogUsername" placeholder="Username"><br>
+            <input type="text" placeholder="Blog title ...." class="newBlogTitle"><br>
+            <button onclick="addCard()" id="submitBtn">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

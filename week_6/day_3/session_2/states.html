@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>State City Selectors</title>
+</head>
+
+<body>
+    <select id="state"></select>
+    <button>Next</button>
+    <select id="city"></select>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        var state_cities = [{ "state": "Karnataka", "cities": ["Bangalore", "Mysore"] }, { "state": "Tamil Nadu", "cities": ["Chennai", "Tanjore"] }, { "state": "Maharashtra", "cities": ["Mumbai", "Wardha", "Nagpur", "Pune", "Amravati", "Jalgaon", "Nashik", "Aurangabad", "Solapur"] }, { "state": "Rajasthan", "cities": ["Ajmer", "Jaipur"] }]
+        $(document).ready(function () {
+            for (var i = 0; i < state_cities.length; i++) {
+                $('#state').append("<option>" + state_cities[i]["state"] + "</option>")
+            }
+
+            $('button').click(function () {
+                $("#city").text("")
+                if ($('#state').val() == "Karnataka") {
+                    var size = state_cities[0]["cities"].length;
+                    for (var k = 0; k < size; k++) {
+                        $('#city').append("<option>" + state_cities[0]["cities"][k] + "</option>")
+                    }
+                }
+                if ($('#state').val() == "Tamil Nadu") {
+                    var size = state_cities[1]["cities"].length;
+                    for (var k = 0; k < size; k++) {
+                        $('#city').append("<option>" + state_cities[1]["cities"][k] + "</option>")
+                    }
+                }
+                if ($('#state').val() == "Maharashtra") {
+                    var size = state_cities[2]["cities"].length;
+                    for (var k = 0; k < size; k++) {
+                        $('#city').append("<option>" + state_cities[2]["cities"][k] + "</option>")
+                    }
+                }
+                if ($('#state').val() == "Rajasthan") {
+                    var size = state_cities[3]["cities"].length;
+                    for (var k = 0; k < size; k++) {
+                        $('#city').append("<option>" + state_cities[3]["cities"][k] + "</option>")
+                    }
+                }
+
+
+            })
+        });
+    </script>
+</body>
+
+</html>

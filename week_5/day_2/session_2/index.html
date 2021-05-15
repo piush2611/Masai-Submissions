@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Products Display</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .container>div,
+        table {
+            width: 33%;
+            padding: 30px;
+            margin: 20px;
+            background-color: aqua;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .row>td {
+            padding: 5px 10px;
+            width: 33%;
+        }
+
+        table {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- FORM to add -->
+        <div>
+            <div>Product</div>
+            <input type="text" placeholder="Product Name" id="product">
+            <div>Price</div>
+            <input type="number" placeholder="Price" class="price">
+            <div>Quantity</div>
+            <input type="number" placeholder="Quantity" class="quantity"><br>
+            <button onclick="submit()">Submit</button>
+            <button onclick="showTable()">Show Data</button>
+        </div>
+        <!-- TABLE -->
+        <table>
+            <tr class="row">
+                <td>Products</td>
+                <td>Price</td>
+                <td>Quantity</td>
+            </tr>
+        </table>
+
+        <!-- SETTINGS -->
+        <div class="settings">
+            <div>Font-Size : </div>
+            <input type="number" placeholder="Font-size in px" id="sizeOfFont">
+            <div>Font-Color : </div>
+            <input type="text" placeholder="Put valid font-color" id="colorOfFont">
+            <div>Background-Color : </div>
+            <input type="text" placeholder="Put valid background-color" id="bgc">
+            <button onclick="chnageStyle()">Submit</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

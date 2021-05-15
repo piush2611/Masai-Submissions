@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>marriageAgeValidator</title>
+</head>
+<body>
+    <select name="gender" id="gender">
+        <option value="">--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+    <input type="text" id="age" placeholder="Birth year ex 1996">
+    <button onclick="marraigeAgeValidator()">Your age valid or not for marriage</button>
+    <script>
+        function marraigeAgeValidator() {
+            var gen = document.getElementById("gender").value
+            var age = document.getElementById("age").value
+            if( gen == "male" && age < 1998 || gen == "female" && age < 2001){
+                alert("Yeah you can marry")
+            } else if(gen == "male" && age >= 1998 || gen == "female" && age >= 2001) {
+                alert("Sorry you will have to wait for some more years!")
+            } else {
+                alert("Invalid Input")
+            }
+        }
+    </script>
+</body>
+</html>

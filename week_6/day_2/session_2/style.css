@@ -1,0 +1,12 @@
+#bgImg {
+    background-image: url("https://www.masaischool.com/static/posters/banner_1.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 650px){
+    #bgImg {
+        background-image: none;
+        background-color: rgb(43, 39, 39);
+    }
+}

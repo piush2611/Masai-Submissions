@@ -1,0 +1,11 @@
+Network access layer : 
+It allows physical transmission of data for hardware addresses and protocols present in this layer
+
+Internet layer : 
+It defines the protocols which are responsible for logical transmission of data over the network
+
+Host-to-host layer :
+It is responsible for end-to-end communication and error free delivery of data
+
+Process layer :
+It is responsible for node-to-node communication and controls user-interface specifications.

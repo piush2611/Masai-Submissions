@@ -1,0 +1,15 @@
+#bgImg {
+    background-image: url(https://a.slack-edge.com/59662/marketing/img/homepage/video/brand-campaign_hero-poster.jpg);
+    width: 100%;
+    background-size: cover;
+}
+
+.purpleButton {
+    background-color: rgb(57, 8, 66);
+}
+
+#bgPurple {
+    background-color: rgb(57, 8, 66);
+    background-image: url(https://a.slack-edge.com/80588/spacesuit/source/images/backgrounds/bg-halftone-black-20p.png);
+    background-size: cover;
+}

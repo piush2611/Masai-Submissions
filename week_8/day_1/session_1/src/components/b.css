@@ -1,0 +1,62 @@
+.b1 {
+    padding: 10px 20px;
+    background-color: rgb(206, 65, 65);
+    border-radius: 50px;
+    color: white;
+    width: 150px;
+}
+
+.b2 {
+    padding: 10px 20px;
+    background-color: rgb(104, 207, 211);
+    border-radius: 50px;
+    color: white;
+    width: 150px;
+}
+
+.b3 {
+    padding: 10px 20px;
+    background-color: rgb(16, 61, 63);
+    border-radius: 50px;
+    color: white;
+    width: 150px;
+}
+.b4 {
+    padding: 10px 20px;
+    background-color: rgb(73, 23, 14);
+    border-radius: 50px;
+    color: rgb(241, 236, 236);
+    width: 150px;
+}
+
+.b5 {
+    padding: 10px 20px;
+    background-color: rgb(75, 177, 88);
+    border-radius: 50px;
+    color: rgb(235, 247, 236);
+    width: 150px;
+}
+
+.b6 {
+    padding: 10px 20px;
+    background-color: rgb(121, 114, 228);
+    border-radius: 50px;
+    color: white;
+    width: 150px;
+}
+
+.b7 {
+    padding: 10px 20px;
+    background-color: rgb(224, 123, 194);
+    border-radius: 50px;
+    color: white;
+    width: 150px;
+}
+
+.b8 {
+    padding: 10px 20px;
+    background-color: rgb(143, 180, 74);
+    border-radius: 50px;
+    color: white;
+    width: 150px;
+}

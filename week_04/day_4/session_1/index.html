@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coding Session 1!</title>
+</head>
+
+<body>
+    <!-- These elements below are for FSD.W3.3.1_1-->
+    <h1> Create your own exponentiation function! </h1>
+    <input type="text" name="num1" id="inp1">
+    <input type="text" name="num2" id="inp2">
+    <p id="output"> </p>
+    </hr>
+    <button onclick="exponent()">Click here to find the exponent!</button>
+    <!-- These elements above are for FSD.W3.3.1_1-->
+
+    <!-- These elements below are for FSD.W3.3.1_2-->
+    <h1>Sum of multiples of 3 and 5!</h1>
+    <p id="sum"></p>
+    <input type="text" id="limit">
+    <button onclick="sumOf3And5()">Click here for the output!</button>
+
+    <!-- These elements above are for FSD.W3.3.1_2-->
+
+    <!-- These elements below are for FSD.W3.3.1_3-->
+    <h1>Check if the users email is valid!</h1>
+    <label for="Email">Email</label>
+    <input type="text" id="email" />
+    <button onclick="validateEmail()">Check Email!</button>
+    <!-- These elements above are for FSD.W3.3.1_3-->
+    <script type="text/javascript">
+        //Write javascript for FSD.W3.3.1_1 here
+        function exponent() {
+            var exp = 1;
+            var n1 = document.getElementById("inp1").value
+            var n2 = document.getElementById("inp2").value
+            for (var i = 0; i < n2; i++) {
+                var exp = exp * n1;
+            }
+            document.getElementById("output").innerHTML = exp
+        }
+        function mul(a, b) {
+            return a * b;
+        }
+        //Write javascript for FSD.W3.3.1_2 here
+        function sumOf3And5() {
+            var l = document.getElementById("limit").value
+            var sum = 0;
+            var num = ""
+            for (var i = 15; i <= l; i++) {
+                if (i % 3 == 0 && i % 5 == 0) {
+                    num = num + " + " + i;
+                    sum += i;
+                }
+            }
+            document.getElementById("sum").innerHTML = num + " = " + sum;
+        }
+
+        //Write javascript for FSD.W3.3.1_3 here
+        function validateEmail() {
+            var email = document.getElementById("email").value
+            var count = 0; checkForAt = false;
+            for (var i = 0; i < email.length; i++) {
+                if (email[0] == '@' || email[0] == '.') {
+                    count++
+                }
+                else if (email[i] == '@') {
+                    checkForAt = true
+                }
+                else if (email[i] == '.' && email[i + 1] == '.') {
+                    count++
+                }
+                else if (email[i] == "~" || email[i] == "!" || email[i] == "#" || email[i] == "$" || email[i] == "%" || email[i] == "^" || email[i] == "&" || email[i] == "*" || email[i] == "(" || email[i] == ")" || email[i] == "+") {
+                    count++
+                }
+                else if (email[i] == '.' && email[i - 1] == '@') {
+                    count++
+                }
+            }
+            if (count == 0 && checkForAt == true) {
+                alert("Valid email")
+                count = 0;
+                checkForAt = false;
+            } else {
+                alert("Invalid email")
+            }
+        }
+    </script>
+</body>
+
+</html>

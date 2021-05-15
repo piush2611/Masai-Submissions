@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+        <div class="container">
+                <div class="row container mt-5 p-2 bg-info text-white font-text-bolder">
+                        <div class="col-lg-2 col-12">
+                            <label for="sortIt">Sort By :</label>
+                            <select name="" id="sortIt" class="form-control">
+                                <option value="name">Name</option>
+                                <option value="email">Email</option>
+                                <option value="nameDesc">Name(Desc)</option>
+                                <option value="emailDesc">Email(Desc)</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-12">
+                            <label for="">Sort By category</label>
+                            <select name="" id="category" class="form-control">
+                                <option value="both">Both</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-12">
+                            <label for="">Sort by Marks</label>
+                            <select name="" id="marks" class="form-control">
+                                <option value="MathsAsc">Maths ↑</option>
+                                <option value="MathsDesc">Maths ↓</option>
+                                <option value="SciAsc">Science ↑</option>
+                                <option value="SciDesc">Science ↓</option>
+                                <option value="EngAsc">English ↑</option>
+                                <option value="EngDesc">English ↓</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-12">
+                            <label for="">Search by name</label>
+                            <input type="text" name="" placeholder="Search by name" id="search" class="form-control">
+                        </div>
+                        <div class="col-lg-2 col-12">
+                            <label for="">Search by email</label>
+                            <input type="text" id="email" placeholder="Search by exact email" class="form-control">
+                        </div>
+                        <div class="col-lg-2 col-12">
+                            <label for="">Search by domain</label>
+                            <input type="text" id="domain" placeholder="Search by domain" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-lg-4 col-6">
+                            <select name="" id="pagination" class="form-control">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-8 col-6" id="buttons">
+
+                        </div>
+                    </div>
+        </div>
+    <table class="container bg-light my-2">
+        <tr class="bg-danger text-white font-text-bolder  justify-content-around">
+            <td>Id</td>
+            <td>First-name</td>
+            <td>Last-name</td>
+            <td>Email</td>
+            <td>Gender</td>
+            <td>English</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Total Marks</td>
+        </tr>
+        <tbody id="table"></tbody>
+    </table>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

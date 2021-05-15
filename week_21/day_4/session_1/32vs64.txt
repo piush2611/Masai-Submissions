@@ -1,0 +1,13 @@
+32 bit processor :
+1 - It has 4gb addressable space
+2- 64 bit application's and programs won't work
+3 - Need 32 bit os 
+4- It supports windows 7, 8, vista, XP and linux
+5- Not ideal for multi-tasking.
+
+64 bit processor :
+1 - It has 16 gb addressable space
+2- 32 bit applications and programs will work
+3- Can work on both 32 bti and 64 bit
+4- It supports windows 7,8,10, linux, mac os.
+5- Best for multi tasking 

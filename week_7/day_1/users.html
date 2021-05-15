@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Users</title>
+</head>
+
+<body>
+
+    <button id="getData">Get Data</button>
+    <table id="table">
+        <tr>
+            <td>ID</td>
+            <td>Email</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Avatar</td>
+        </tr>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        var table = $("#table")
+        $("#getData").click(function () {
+            $.ajax({
+                url: "https://reqres.in/api/users/",
+            })
+                .done(function (data) {
+                    for (var i = 0; i < data['data'].length; i++) {
+                        var newRow = document.createElement("tr");
+                        var id = document.createElement("td")
+                        var email = document.createElement('td')
+                        var firstN = document.createElement("tr")
+                        var lastN = document.createElement("td")
+                        var img = document.createElement("img")
+                        id = data["data"][i]["id"]
+                        email = data["data"][i]['email']
+                        firstN = data["data"][i]["first_name"]
+                        lastN = data["data"][i]['last_name']
+                        src = data["data"][i]["avatar"]
+                        img.setAttribute("src", src)
+                        newRow.appendChild(id);
+                        newRow.appendChild(email)
+                        newRow.appendChild(firstN)
+                        newRow.appendChild(lastN)
+                        table.appendChild(newRow)
+                    }
+                });
+        });
+    </script>
+</body>
+
+</html>

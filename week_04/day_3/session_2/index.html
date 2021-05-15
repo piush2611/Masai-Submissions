@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>w4 d3 s2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="text" id="age">
+    <input type="text" id="color" placeholder="Your fav color">
+    <select name="country" id="country">
+        <option value="">--</option>
+        <option value="India">India</option>
+        <option value="United states of America">USA</option>
+        <option value="China">China</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Australia">Australia</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Canada">Canada</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Sweden">Sweden</option>
+    </select>
+    <p id="output">Your o/p will be displayed here</p>
+    <button onclick="drive()">YOU CAN DRIVE OR CAN'T</button>
+    <button onclick="colorChange()" id="btn">CLICK HERE TO CHANGE MY COLOR</button>
+    <button onclick="findContinent()">FIND CONTINENT </button>
+    <script>
+        function drive() {
+            var x = document.getElementById("age").value;
+            console.log(x)
+            if (x == 18) {
+                document.getElementById("output").innerHTML = "You are just old enough to drive in India!";
+            } else if (x > 18) {
+                document.getElementById("output").innerHTML = "You can drive in India!"
+            } else if (x < 18) {
+                document.getElementById("output").innerHTML = "You can't drive in India!"
+            }
+        }
+        function colorChange() {
+            var y = document.getElementById("color").value;
+            document.getElementById("btn").style.background = y;
+        }
+        function findContinent() {
+            var country = document.getElementById("country").value;
+            switch (country) {
+                case "India":
+                    alert("The continent is Asia");
+                    break;
+                case "United states of America":
+                    alert("The continent is North America ");
+                    break;
+                case "China":
+                    alert("The continent is Asia");
+                    break;
+                case "Nepal":
+                    alert("The continent is Asia");
+                    break;
+                case "Australia":
+                    alert("The continent is Australia");
+                    break;
+                case "France":
+                    alert("The continent is Europe");
+                    break;
+                case "Germany":
+                    alert("The continent is Europe");
+                    break;
+                case "South Africa":
+                    alert("The continent is Africa");
+                    break;
+                case "Nigeria":
+                    alert("The continent is Africa ");
+                    break;
+                case "Mexico":
+                    alert("The continent is North America");
+                    break;
+                case "Argentina":
+                    alert("The continent is South America");
+                    break;
+                case "Brazil":
+                    alert("The continent is South America");
+                    break;
+                case "Canada":
+                    alert("The continent is North America");
+                    break;
+                case "Singapore":
+                    alert("The continent is Asia");
+                    break;
+                case "Sweden":
+                    alert("The continent is Europe");
+                    break;
+                default:
+                    alert("Invalid Input !");
+            }
+        }
+    </script>
+</body>
+
+</html>

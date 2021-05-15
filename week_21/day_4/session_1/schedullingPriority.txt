@@ -1,0 +1,3 @@
+Priority scheduling : 
+Preemptive Scheduling - In this scheduling even though it follows shortest job nest scheduling, still processes can be scheduled. For ex. if high priority process comes in the queue then, current process can be set to starve and high priority process can be executed.
+Non-Preemptive Scheduling - In this scheduling processes cannot be scheduled. For ex. even if high priority process is waiting in queue then also process running presently will continue to run.

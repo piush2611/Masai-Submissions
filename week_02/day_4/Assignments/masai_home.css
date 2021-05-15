@@ -1,0 +1,354 @@
+* {
+    margin: o;
+    padding: 0;
+    font-family: sans-serif;
+}
+hr {
+    color:rgb(110, 202, 238);
+}
+.head {
+    text-align: center;
+    font-size: 40px;
+}
+header {   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    margin-bottom: 10px;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    padding: 10px 0 ;
+}
+header a {
+    margin-right: 20px;
+    outline: none;
+    text-decoration: none;
+}
+header button {
+    background-color: white;
+    color: red;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+.gray {
+    color: gray;
+}
+#back {
+    background-image: url("banner_1.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    grid-template-rows: 400px 120px 1fr;
+}
+#back p {
+    text-align: right;
+    font-size: 50px;
+    color: white;
+    margin-right: 200px;
+}
+#back p:first-child {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#back p:last-child {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#secondPart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px;
+    text-align: center;
+}
+
+#secondPart img {
+    width: 170px;
+}
+
+#thirdPart {
+    background: linear-gradient(to right, rgb(93, 119, 231), rgb(0, 183, 255));
+    height: 750px;
+    
+}
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    margin: 0px 400px;
+    grid-gap: 30px;
+}
+
+#cards span {
+    font-size: 60px;
+    color: rgb(70, 163, 250);
+}
+#cards > div {
+    background-color: white;
+    border-radius: 5px;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+}
+#thirdPart > p {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+#fourthPart {
+    margin: 100px 300px;
+    text-align: center;
+}
+
+#imgPart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+#imgPart img {
+    height: 400px;
+    background-color: gainsboro;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#hiringpartners {
+    text-align: center;
+}
+#float {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#paymentoptions {
+    background: linear-gradient(to right, rgb(93, 119, 231), rgb(0, 183, 255));
+    height: 600px;
+}
+#content {
+    margin: 100px 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px;
+    grid-gap: 30px;
+}
+#content div {
+    background: white;
+    text-align: center;
+    padding: 20px;
+}
+#paymentoptions button {
+    margin-left: 850px;
+    padding: 10px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 30px;
+    background: transparent;
+}
+#paymentoptions > p {
+    text-align: center;
+    padding-top: 70px;
+    font-size: 50px;
+    color: white;
+}
+#container {
+    margin: 10px 300px;
+    text-align: center;
+}
+#phaseI {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#phaseII {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#container img {
+    background: linear-gradient(to right, rgb(93, 119, 231), rgb(0, 183, 255));
+    border-radius: 50%;
+    padding: 40px;
+}
+#container button {
+    padding: 10px 40px;
+    border-radius: 50px;
+    background-color: brown;
+    color: white;
+}
+ #endleft {
+    float: left;
+}
+ #endright {
+    float: right;
+}
+#endleft > div, #endright > div {
+    float: left;
+    padding: 10px;
+}
+
+.course > p {
+    background: linear-gradient(to right, rgb(93, 119, 231), rgb(0, 183, 255));
+    height: 50px;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+}
+.course > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#courses {
+    margin: 100px 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
+    text-align: center;
+}
+.btn1 {
+    float: right;
+    border-radius: 30px;
+    padding: 10px 30px;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    margin: 5px 10px;
+    border-style: none;
+}
+.btn2 {
+    float:right;
+    border-radius: 50px;
+    padding: 15px 40px;
+    border: 1px solid gray;
+    background-color: white;
+}
+#btn {
+    background-color: rgb(197, 22, 22);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+/* _____________________________MediaQueryPart_____________________________________ */
+
+@media only screen and (max-width:650px) {
+    #back {
+        display: grid;
+        grid-template-columns: 100px;
+        grid-template-rows: 150px 150px;
+        grid-gap: 30px;
+        background-image: none;
+        background-color: rgb(54, 52, 52);
+    }
+    #back p {
+        font-size: 25px;
+        color: tomato;
+        margin: 100px 180px;
+        justify-content: center;
+    }
+    #back p:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #back p:last-child {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #secondPart {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    #cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 300px);
+        margin: 0px 100px;
+    }
+    #thirdPart {
+        height: auto;
+    }
+    #fourthPart {
+        margin: 50px 20px;
+        text-align: center;
+    }
+    
+    #imgPart {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 40px;
+    }
+    #imgPart img {
+        height: 280px;
+        background-color: gainsboro;
+        padding: 10px;
+    }
+    .course > p {
+        background: linear-gradient(to right, rgb(93, 119, 231), rgb(0, 183, 255));
+        height: 50px;
+        padding: 20px;
+        color: white;
+        font-size: 30px;
+    }
+    .course > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #courses {
+        margin: 50px 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 50px;
+        text-align: center;
+    }
+    .inside {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+    }
+    #float {
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns:  1fr;
+        justify-items: center;
+    }
+    #content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0px 50px;
+    }
+    #paymentoptions {
+        height: auto;
+    }
+    #paymentoptions button {
+        align-self: center;
+    }
+    #container {
+        margin: 0px 100px;
+    }
+    #phaseI {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    #phaseII {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 30px;
+    }
+}

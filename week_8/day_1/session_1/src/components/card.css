@@ -1,0 +1,42 @@
+.card {
+    background-color: rgb(24, 8, 49);
+    justify-items: center;
+    text-align: center;
+    color: white;
+    width: 300px;
+    height: auto;
+    padding: 50px;
+}
+
+.btn, .flex {
+    display: flex;
+    justify-content: center;    
+}
+
+.btn1, .btn2 {
+    background-color: teal;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 2px;
+    
+}
+
+.btn2 {
+    background-color: inherit;
+    border: 1px solid teal;
+}
+
+.flex > button {
+    background-color: inherit;
+    color: white;
+    border-style: none;
+    padding: 5px;
+}
+
+img {
+    border-radius: 50%;
+    padding: 5px;
+    height: 100px;
+    width: 120px;
+    border: 2px solid teal;
+}

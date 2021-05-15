@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>layout_6</title>
+    <style>
+        #layout {
+            margin: 100px 250px;
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px;
+            grid-gap: 40px;
+        }
+        #layout div {
+            background-color: coral;
+            border-radius: 5px;
+        }
+        .one {
+            grid-column: 1/2;
+            grid-row: 1;
+        }
+        .two {
+            grid-column: 2/3;
+            grid-row: 1;
+        }
+        .three {
+            grid-column: 3/4;
+            grid-row: 1;
+        }
+        .four {
+            grid-column: 4/5;
+            grid-row: 1;
+        }
+        .five {
+            grid-column: 1/2;
+            grid-row: 2;
+        }
+        .six {
+            grid-column: 2/3;
+            grid-row: 2;
+        }
+        .seven {
+            grid-column: 3/4;
+            grid-row: 2;
+        }
+        .eight {
+            grid-column: 1/2;
+            grid-row: 3;
+        }
+        .nine {
+            grid-column: 2/3;
+            grid-row: 3;
+        }
+        .ten {
+            grid-column: 1/2;
+            grid-row: 4;
+        }
+        @media only screen and (max-width: 600px) {
+            #layout {
+                margin: 75px 150px;
+                grid-template-columns: repeat(4, 75px);
+                grid-template-rows: repeat(4, 75px);
+                grid-gap: 25px;
+            }
+            #layout div {
+                background-color: crimson;
+            }
+        }
+        @media only screen and (min-width: 960px) {
+            #layout {
+                margin: 120px 500px;
+                grid-template-columns: repeat(4, 150px);
+                grid-template-rows: repeat(4,150px);
+                grid-gap: 50px;
+            }
+            #layout div {
+                background-color: darkslateblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <div class="first"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+        <div class="eight"></div>
+        <div class="nine"></div>
+        <div class="ten"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+hr {
+    color: rgb(110, 202, 238);
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    margin-bottom: 10px;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    padding: 10px 0 ;
+}
+header a {
+    margin-right: 20px;
+    outline: none;
+    text-decoration: none;
+}
+header button {
+    background-color: white;
+    color: red;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+.heading {
+    text-align: center;
+    font-size: 30px;
+    margin: 50px 0px;
+}
+#back {
+    background: linear-gradient(to right, rgb(93, 119, 231), rgb(0, 183, 255));
+    margin-top: 20px;
+    padding-top: 30px;
+}
+#back > div {
+    color: white;
+    margin: 0 300px;
+}
+#back > div p:first-child {
+    font-size: 30px;
+    padding-top: 20px;
+}
+#back > div p:first-child + p {
+    font-size: 25px;
+    padding-top: 20px;
+}
+.firstPart1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.firstPart1 div {
+    margin: 10px;
+    font-size: 20px;
+}
+.firstPart2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px 0px;
+    text-align: center;
+}
+.size {
+    font-size: 30px;
+}
+.firstPart3 {
+    text-align: center;
+    margin: 30px 0px;
+}
+#back > div button {
+    border: 3px solid white;
+    padding: 15px 60px ;
+    border-radius: 50px;
+    background: transparent;
+    color: white;
+    margin: 30px 500px;
+}
+#back > div button:hover {
+    background-color: white;
+    color: black;
+}
+#secondPart {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 20px 400px;
+}
+#secondPart > div, #thirdPart > div {
+    border-left: 5px solid gainsboro;
+    padding: 20px;
+}
+.big {
+    font-size: 30px;
+    color:gray;
+    margin-bottom: 10px;
+}
+.red {
+    font-size: 20px;
+    color: rgb(163, 36, 36);
+}
+#secondPart button {
+    background: linear-gradient(to right, rgb(79, 97, 179), rgb(0, 183, 255));
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: white;
+    border-style: none;
+}
+#thirdPart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 20px 400px;
+    grid-gap: 50px;
+}
+#lastPart:nth-of-type(2) {
+    float: left;
+}
+ #lastPart div:last-child {
+    float: right;
+}
+#lastPart div {
+    float: left;
+    padding: 10px;
+}
+#lastPart {
+    margin: 100px 300px;
+}
+
+@media only screen and (max-width: 650px) {
+    #back > div {
+        margin: 0;
+    }
+    #back > div p:first-child {
+        font-size: 25px;
+    }
+    #back > div p:first-child + p {
+        font-size: 20px;
+    }
+    .firstPart1 {
+        grid-template-columns: 1fr;
+    } 
+    #secondPart {
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-columns: 1fr;
+        margin: 20px ;
+    }
+    #secondPart > div, #thirdPart > div {
+        border-left: none;
+    }
+    #thirdPart {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        margin: 20px ;
+    }
+    #lastPart {
+        margin: 10px;
+    }  
+}
+

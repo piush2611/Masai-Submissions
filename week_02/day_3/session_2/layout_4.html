@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>layout_4</title>
+    <style>
+        #layout {
+            margin: 70px 200px;
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(2, 100px);
+            grid-gap: 40px;
+        }
+        #layout div {
+            background-color: yellow;
+            border-radius: 5px;
+        }
+        .first {
+            grid-column: 1/2;
+            grid-row: 1;
+        }
+        .sec {
+            grid-column: 2/3;
+            grid-row: 1;
+        }
+        .third {
+            grid-column: 3/4;
+            grid-row: 1;
+        }
+        .four {
+            grid-column: 4/5;
+            grid-row: 1;
+        }
+        .five {
+            grid-column: 5/6;
+            grid-row: 1;
+        }
+        .six {
+            grid-column: 1/2;
+            grid-row: 2;
+        }
+        .seven {
+            grid-column: 2/3;
+            grid-row: 2;
+        }
+        .eight {
+            grid-column: 3/4;
+            grid-row: 2;
+        }
+        .nine {
+            grid-column: 4/5;
+            grid-row: 2;
+        }
+        .ten {
+            grid-column: 5/6;
+            grid-row: 2;
+        }
+        @media only screen and (max-width: 768px) {
+           #layout div {
+               background-color: maroon;
+               border-radius: 5px;
+           }
+           #layout {
+               margin: 50px 150px;
+                display: grid;
+                grid-template-columns: repeat(5, 75px);
+                grid-template-rows: repeat(2, 75px);
+                grid-gap: 25px;
+           }
+        }
+        @media only screen and (min-width: 992px) {
+            #layout div {
+               background-color:gray;
+               border-radius: 5px;
+           }
+           #layout {
+                margin: 100px 500px;
+                display: grid;
+                grid-template-columns: repeat(5, 150px);
+                grid-template-rows: repeat(2, 150px);
+                grid-gap: 50px;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <div class="first"></div>
+        <div class="sec"></div>
+        <div class="third"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+        <div class="eight"></div>
+        <div class="nine"></div>
+        <div class="ten"></div>
+    </div>
+</body>
+</html>
